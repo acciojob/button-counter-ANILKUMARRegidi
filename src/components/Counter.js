@@ -1,4 +1,5 @@
-import { Component } from "react";
+import React, { Component } from "react";  // Updated import statement
+import './../styles/App.css';
 
 class Counter extends Component {
     constructor(props) {
@@ -15,11 +16,10 @@ class Counter extends Component {
         return (
             <>
                 <p>Button clicked {this.state.count} times</p>
-                {/* Corrected onClick attribute */}
                 <button onClick={this.incrementCount}>Click me</button>
             </>
         )
     }
 }
 
-export default Counter;
+export default Counter;  // Changed export statement to export Counter as default
